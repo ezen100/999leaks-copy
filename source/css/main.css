@@ -1,0 +1,283 @@
+body {
+    background-color: rgb(17, 17, 17);
+}
+
+.logo {
+    border-radius: 10px 10px 0 0;
+}
+
+.invert {
+    -webkit-filter: invert(100%)!important; 
+    filter: invert(100%)!important;
+}
+
+.vote_up {
+    cursor: cell;
+}
+
+.vote_down {
+    cursor: not-allowed;
+}
+
+.copySpan {
+    cursor: copy;
+}
+
+
+#emoijs_content {
+    user-select: none;
+}
+
+.emojiIcon {
+    display: inline-table;
+    width: 24px; 
+    height: 24px; 
+    position: sticky; 
+    background: rgb(33, 33, 33); 
+    padding: 3px; 
+    margin: 4px; 
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 993px)  {
+    img.responsive-img, video.responsive-video {
+        max-width: 468px!important; 
+    }
+    #chatbox_center{
+        min-width: 468px!important;
+    }
+}
+
+@media screen and (max-width: 992px) and (min-width: 500px)  {
+    img.responsive-img, video.responsive-video {
+        max-width: 400px!important; 
+    }
+    #chatbox_center{
+        min-width: 400px!important;
+    }
+}
+
+@media screen and (max-width: 499px) {
+    img.responsive-img, video.responsive-video {
+        max-width: 360px!important; 
+    }
+    #chatbox_center{
+        min-width: 360px!important;
+    }
+}
+
+
+.toffyCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.btn {
+    color: #fff;
+    background-color: rgb(53, 53, 53)!important;
+    border-color:rgb(53, 53, 53)!important;
+    border-radius: 3px;
+    outline:none!important;
+    box-shadow: none!important;
+}
+
+.card {
+    background-color: rgba(0,0,0,0.87);
+    border-radius: 0 0 10px 10px;
+}
+
+.card .card-content {
+    border-radius: 0;
+    border-radius: 0 0 10px 10px;
+}
+
+.card-content {
+    background-color: rgb(33, 33, 33);
+}
+
+.card-partnership {
+    margin-top: 25px;
+}
+
+.card-partnership_content {
+    padding: 5px 0 0 0;
+    background-color: rgb(33, 33, 33);
+    border-radius: 10px;
+}
+
+h1, h2, h3, h4, h5 {
+    color: gray;
+}
+
+.partnership-logo {
+    max-width: 320px;
+    max-height: 68px;
+}
+
+input[type=text] {
+    border-bottom: 1px solid #7f0000!important;
+    -webkit-box-shadow: 0 1px 0 0 #7f0000!important;
+    box-shadow: 0 1px 0 0 #7f0000!important;
+    color: gray;
+}
+
+.dropdown-content li > a, .dropdown-content li > span {
+    color: #7f0000 !important;
+}
+
+.switch label input[type=checkbox]:checked+.lever:after {
+    background-color: #7f0000;
+}
+
+.switch label input[type=checkbox]:checked+.lever {
+    background-color: rgba(127, 0, 0, 0.8);
+}
+  
+.active {
+    color: #7f0000!important;
+}
+
+.select-wrapper input.select-dropdown {
+  border-bottom: 0 !important;
+}   
+
+.select-wrapper input.select-dropdown:focus {
+  border-bottom: 0 !important;
+}
+
+.toffyCenterHorizontally {
+    display: flex;
+    justify-content: center;
+}
+
+#chatboxWrap {
+    width: 100%;
+    background-color:rgba(44, 44, 44);
+    border-radius: 10px;
+    margin-top: 10px;
+    height: 250px !important;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column-reverse;
+    color: white;
+}
+
+#chatboxTexter {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+#textarea_chatbox {
+    margin-top: 5px;
+    margin-left: 10px;
+    width: 80%;
+    height: 50px;
+    border-radius: 10px;
+    border: 0;
+    outline: none;
+    resize: none;
+    background-color: rgba(44, 44, 44);
+    color: white;
+}
+
+#chatcontent li {
+    padding: 10px 0;
+    word-break: break-all;
+    border-top: 1px solid #7f0000;
+}
+
+.chatboxMessage {
+    background-color: rgba(33, 33, 33);
+    border-radius: 5px;
+    padding: 4px;
+}
+
+.chatboxMargin {
+    margin-left: 5px;
+}
+::-webkit-scrollbar {
+    position: absolute;
+    width: 12px;
+}
+::-webkit-scrollbar-track {
+  background-color: rgb(17, 17, 17);
+  border-radius: 4px;  
+}
+::-webkit-scrollbar-thumb {
+  background-color:  rgb(50, 50, 50);
+  border-radius: 4px;   
+}
+::-webkit-scrollbar-corner, ::-webkit-resizer {
+    background-color: rgb(33, 33, 33);
+}
+
+.noselect::selection {
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+ 
+    /*
+      Introduced in Internet Explorer 10.
+      See http://ie.microsoft.com/testdrive/HTML5/msUserSelect/
+    */
+    -ms-user-select: none;
+    user-select: none;
+    pointer-events: none;
+}
+
+.modal .modal-footer, .modal {
+    background-color: rgb(17, 17, 17);
+}
+
+.resultSearch {
+    display: inline-flex;
+    color: white;
+    font-weight: bold;
+    width: 245px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.resultSearch img{
+    margin-right: 30px;
+    height: 64px;
+    display: inline-flex;
+}
+
+.resultSearch p {
+    margin: 0;
+}
+
+#search_results {
+    max-width: 600px;
+}
+
+#search_results > ul {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    margin-top: 25px;
+    height: 250px !important;
+}
+
+#search_results tbody, #search_results thead {
+    color: gray;
+    float: center;
+    text-align: center;
+}
+
+.resultLine {
+    border-bottom: 2px solid #7f0000;
+    height: 2px;
+}
+
+.avatar {
+    border-radius: 10px;
+}
